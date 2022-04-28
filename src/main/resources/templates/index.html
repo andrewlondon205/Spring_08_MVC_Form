@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Enter User</title>
+</head>
+<body>
+	<form action="#" th:action="@{/web/saveUser}" method="get">
+		<h2>Add User</h2>
+		<div>
+
+			<span> Name </span> <input name="username" id="username" type="text"
+				placeholder="enter your name" required>
+
+		</div>
+		<div>
+			<span> LastName </span> <input name="lastname" id="lastname"
+				type="text" placeholder="enter your lastname">
+		</div>
+
+		<div>
+			<span> Email </span> <input name="userEmail" id="email" type="email"
+				placeholder="enter your email">
+		</div>
+
+
+		<input id="submitUser" type="submit" th:value="save">
+	</form>
+</body>
+</html>
